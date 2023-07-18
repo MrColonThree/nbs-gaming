@@ -240,6 +240,7 @@ nav {
 .career{
   padding-left: 240px;
   background: linear-gradient(90deg, #d73636 0%, #df7009 100%);
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
