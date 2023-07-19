@@ -10,10 +10,8 @@ span {
 }
 /* Header Section */
 header {
-  max-width: 100%;
-  padding: 20px 240px;
-  background-color: aliceblue;
-  background-size: contain;
+  width: 100%;
+  padding: 20px 220px;
   box-shadow: 0px 5px 5px rgba(175, 147, 147, 0.3);
 }
 nav {
@@ -226,11 +224,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .instant-content {
   max-width: 320px;
   text-align: right;
   padding-bottom: 150px;
+  margin-left: 300px;
 }
 .instant-content h1 {
   font-size: 2.5rem;
@@ -239,6 +239,9 @@ nav {
 .instant-content p {
   font-size: 1.2rem;
   color: #534c64;
+}
+.instant-image{
+  position: relative;
 }
 .big-image1 img {
   width: 600px;
@@ -257,9 +260,10 @@ nav {
   align-items: center;
 }
 .play-game-content {
-  width: 350px;
+  max-width: 350px;
   text-align: left;
   padding-bottom: 150px;
+  margin-right: 300px;
 }
 .play-game-content h1 {
   font-size: 2.5rem;
@@ -268,6 +272,9 @@ nav {
 .play-game-content p {
   font-size: 1.2rem;
   color: #534c64;
+}
+.play-game-image{
+  position: relative;
 }
 .big-image2 img {
   width: 500px;
@@ -436,18 +443,26 @@ footer {
   .career-image img {
     width: 100%;
   }
-
+  .banner-image img {
+    height: auto;
+  }
   .banner {
     background-position: bottom;
+    gap: 50px;
   }
   .gamer-content,
   .instant-content,
   .play-game-content {
     text-align: center;
+    margin: 0px;
   }
   .online-games {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+  }
+  .instant-content,
+  .play-game-content{
+    padding-bottom: 50px;
   }
   .big-image1 img {
     width: 300px;
@@ -535,12 +550,15 @@ footer {
   }
 
   .banner {
-    background-position: bottom;
+    background-position: bottom center;
+    gap: 300px;
+    background-size: 100% 50%;
   }
   .gamer-content,
   .instant-content,
   .play-game-content {
     text-align: center;
+    margin: 0px;
   }
   .online-games {
     grid-template-columns: repeat(2, 1fr);
@@ -626,9 +644,10 @@ footer {
     text-align: center;
   }
   .instant-content,
-  .play-game-content {
+  .play-game-content{
     max-width: 500px;
     padding-bottom: 50px;
+    margin: 0px;
   }
   .big-image1 img {
     width: 600px;
