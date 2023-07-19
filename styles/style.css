@@ -10,13 +10,16 @@ span {
 }
 /* Header Section */
 header {
+  max-width: 100%;
   padding: 20px 240px;
   background-color: aliceblue;
+  background-size: contain;
   box-shadow: 0px 5px 5px rgba(175, 147, 147, 0.3);
 }
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
   display: flex;
@@ -214,7 +217,7 @@ nav {
   align-items: center;
 }
 .play-game-content {
-  width: 320px;
+  width: 350px;
   text-align: left;
   padding-bottom: 150px;
 }
@@ -247,6 +250,7 @@ nav {
 }
 .career-content{
   color: #FFF;
+  padding: 30px 0px;
 }
 .career-title{
   font-size: 2.5rem;
@@ -276,6 +280,7 @@ nav {
 .btn-4{
   color: rgb(239, 15, 15);
   background-color: #FFF;
+  margin-bottom: 20px ;
 }
 /* Game Type Section */
 .game-type {
@@ -329,7 +334,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0px 700px;
+  padding: 0px 400px;
   font-size: 1.2rem;
 }
 .footer-icons a {
@@ -419,29 +424,198 @@ footer {
     margin-left: 190px;
     bottom: 90px;
   }
+  .career-details{
+    font-size: 1rem;
+  }
   .game-type {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
   .type {
-    display: flex;
-    align-items: center;
     gap: 5px;
-    color: #0b0223;
   }
   .type img {
-    width: 30%;
+    width: 25%;
   }
   .type p {
     font-size: 0.7em;
-    font-weight: 500;
+    font-weight: 400;
   }
   .footer-end,
   .footer-content {
     padding: 10px 50px;
   }
   .footer-icons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 10px 80px;
+  }
+}
+/* Medium devices */
+@media screen and (min-width:577px) and (max-width:992px){
+
+  header,
+  .banner,
+  .gamer,
+  .online,
+  .instant,
+  .play-game,
+  .career,
+  .game-type,
+  footer {
+    padding: 50px;
+  }
+  nav,
+  .nav-right,
+  .play-game,
+  .instant,
+  .career{
+    flex-direction: column;
+  }
+  .nav-right,
+  .footer-content,
+  .footer-icons,
+  .footer-end {
+    gap: 20px;
+  }
+  .banner,
+  .gamer {
+    flex-direction: column-reverse;
+  }
+  .banner-image img,
+  .gamer-image img,
+  .career-image img{
+    width: 100%;
+  }
+
+  .banner{
+    background-position: bottom;
+  }
+  .gamer-content,
+  .instant-content,
+  .play-game-content {
+    text-align: center;
+  }
+  .online-games {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .big-image1 img {
+    width: 450px;
+    padding-left: 30px;
+  }
+  .small-image1 img {
+    width: 200px;
+    position: relative;
+    bottom: 160px;
+  }
+  .big-image2 img {
+    width: 375px;
+    margin-right: 110px;
+  }
+  .small-image2 img {
+    width: 172px;
+    position: relative;
+    margin-left: 285px;
+    bottom: 135px;
+  }
+  .type {
+    gap: 10px;
+  }
+  
+  .type p {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .footer-end,
+  .footer-content {
+    padding: 20px 80px;
+  }
+  .footer-icons {
     padding: 10px 130px;
   }
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+  header,
+  .banner,
+  .gamer,
+  .online,
+  .instant,
+  .play-game,
+  .career,
+  .game-type,
+  footer {
+    padding: 20px;
+  }
+  nav,
+  .nav-right,
+  .play-game,
+  .instant,
+  .career{
+    flex-direction: column;
+  }
+  .nav-right,
+  .footer-content,
+  .footer-icons,
+  .footer-end {
+    gap: 30px;
+  }
+  .banner,
+  .gamer {
+    flex-direction: column-reverse;
+  }
+  .banner-image img,
+  .gamer-image img,
+  .career-image img{
+    width: 100%;
+  }
+
+  .banner{
+    background-position: bottom;
+  }
+  .gamer-content,
+  .instant-content,
+  .play-game-content {
+    text-align: center;
+  }
+  .instant-content,
+  .play-game-content {
+    max-width: 500px;
+    padding-bottom: 50px;
+  }
+  .big-image1 img {
+    width: 600px;
+    padding-left: 150px;
+  }
+  .small-image1 img {
+    width: 280px;
+    position: relative;
+    bottom: 180px;
+  }
+  .big-image2 img {
+    width: 500px;
+    margin-right: 150px;
+  }
+  .small-image2 img {
+    width: 250px;
+    position: relative;
+    margin-left: 400px;
+    bottom: 200px;
+  }
+  .type {
+    gap: 20px;
+  }
+  
+  .type p {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .footer-end,
+  .footer-content {
+    padding: 20px 70px;
+  }
+  
 }
