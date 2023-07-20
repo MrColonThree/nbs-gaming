@@ -366,14 +366,17 @@ nav {
 .type {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   color: #0b0223;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 50px;
 }
 .type:hover {
   color: var(--color1);
   border: 1px solid var(--color1);
   border-radius: 50px;
-  padding: 2px;
+  padding: 4px;
   cursor: pointer;
   transform: scale(1.05);
   transition: transform 1s ease-in-out;
@@ -399,7 +402,7 @@ footer {
   flex-wrap: wrap;
   color: var(--color2);
   font-size: 1rem;
-  padding: 30px 400px;
+  padding: 50px 400px;
   cursor: pointer;
 }
 .footer-icons {
@@ -420,7 +423,7 @@ footer {
   align-items: center;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.6);
-  padding: 20px 400px;
+  padding: 40px 400px;
   cursor: pointer;
 }
 .footer-copyright {
@@ -444,6 +447,12 @@ footer {
   footer {
     padding: 20px;
   }
+  .gamer,
+  .online,
+  .career
+  {
+    margin-top: 50px;
+  }
   nav,
   .nav-right,
   .play-game,
@@ -456,6 +465,16 @@ footer {
   .footer-icons,
   .footer-end {
     gap: 20px;
+  }
+  .banner,
+  .gamer-content,
+  .instant-content,
+  .play-game-content,
+  .career,
+  .career-description,
+  .btn-4 {
+    text-align: center;
+    margin: 0px;
   }
   .banner,
   .gamer {
@@ -474,34 +493,51 @@ footer {
     background-position: bottom;
     gap: 50px;
   }
+  .banner-content h1 {
+    font-size: 4rem;
+  }
+  .banner-content h2,
+  .gamer-content h1,
+  .online-content h1,
+  .instant-content h1,
+  .play-game-content h1{
+    font-size: 2.3rem;
+  }
   .btn-1,
   .btn-2,
   .btn-3,
   .btn-4 {
-    font-size: 1.2rem;
-  }
-  .banner,
-  .gamer-content,
-  .instant-content,
-  .play-game-content,
-  .career,
-  .career-description,
-  .btn-4 {
-    text-align: center;
-    margin: 0px;
+    font-size: 1rem;
   }
   .banner-content p {
     font-size: 1.2rem;
     text-align: left;
   }
+  .gamer-content p,
+  .online-content p,
+  .instant-content p,
+  .play-game-content p{
+    font-size: 1.2rem;
+  }
+  .gamer-content h4 {
+    font-size: 1.5rem;
+  }
+  .gamer-content h3 {
+    font-size: 1.7rem;
+  }
   .online-games {
     grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
+    gap: 30px;
+  }
+  .game{
+    margin: 0px 30px;
+  }
+  .game p{
+    font-size: 1rem;
   }
   .instant-content,
-  .play-game-content {
-    padding-bottom: 50px;
-    padding: 0px;
+  .play-game-content{
+    padding-bottom: 30px;
   }
   .instant-content p,
   .play-game-content p {
@@ -526,13 +562,18 @@ footer {
     margin-left: 190px;
     bottom: 90px;
   }
-  .career-details {
+  .career-description{
+    margin: 20px 0px;
     font-size: 1rem;
+  }
+  .career-details {
+    font-size: .8rem;
   }
   .game-type {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 15px;
+    margin: 50px 0px;
   }
   .type {
     gap: 5px;
@@ -544,8 +585,13 @@ footer {
     font-size: 0.7em;
     font-weight: 400;
   }
+  footer{
+    padding-top: 50px;
+  }
+  footer .logo,
   .footer-end,
-  .footer-content {
+  .footer-content,
+  .footer-copyright{
     padding: 10px 50px;
   }
   .footer-icons {
