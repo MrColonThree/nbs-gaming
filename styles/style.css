@@ -579,12 +579,11 @@ footer {
   .career-details {
     font-size: .8rem;
   }
-  /* Game type Section */
   .game-type {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    padding: 50px ;
+    padding: 50px 0px ;
   }
   .type {
     gap: 5px;
